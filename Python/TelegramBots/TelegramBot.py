@@ -35,8 +35,8 @@ class BotHandler:
         return last_update
 
 
-token = 'YourToken' #Token of your bot
-magnito_bot = BotHandler(token) #Your bot's name
+token = '1662017367:AAHZzQNVZw4UjIYxeMSpwghaXQxXR_vM1_M' #Token of your bot
+magnito_bot = handlerbot(token) #Your bot's name
 
 
 
@@ -65,7 +65,7 @@ def main():
                 else:
                     first_chat_name = "unknown"
 
-                if first_chat_text == 'Hi':
+                if first_chat_text == 'I am max maded my @REPRANGER':
                     magnito_bot.send_message(first_chat_id, 'Morning ' + first_chat_name)
                     new_offset = first_update_id + 1
                 else:
